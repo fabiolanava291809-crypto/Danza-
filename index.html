@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>Proyecto Baile</title>
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-pink-200">
+
+<div class="w-full min-h-screen bg-white p-6">
+
+<!-- ENCABEZADO -->
+<div class="flex justify-center items-center mb-6">
+  <h1 class="text-4xl italic font-bold text-purple-700">Danza Nava</h1>
+</div>
+
+<!-- MENÚ -->
+<div class="flex mb-6">
+  <button onclick="cambiarMenu(this)" class="bg-purple-500 text-white px-4 py-2 w-full mx-1 hover:bg-pink-400">Salsa</button>
+  <button onclick="cambiarMenu(this)" class="bg-purple-500 text-white px-4 py-2 w-full mx-1 hover:bg-pink-400">Bachata</button>
+  <button onclick="cambiarMenu(this)" class="bg-purple-500 text-white px-4 py-2 w-full mx-1 hover:bg-pink-400">Reggaetón</button>
+</div>
+
+<!-- TARJETAS -->
+<div class="grid grid-cols-3 gap-6 text-center mb-6">
+
+  <div class="bg-pink-100 p-6 rounded-lg flex flex-col items-center">
+    <img src="img/salsa-baile.jpg" class="w-24 h-24 rounded-full mb-3 border-4 border-purple-400">
+    <h3 class="font-bold italic text-purple-700">Salsa</h3>
+    <p class="text-sm mt-2">La salsa es un baile latino alegre y dinámico que se caracteriza por pasos rápidos y giros coordinados. Su ritmo constante permite mejorar la coordinación, la condición física y expresar emociones mediante el movimiento corporal..</p>
+  </div>
+
+  <div class="bg-pink-100 p-6 rounded-lg flex flex-col items-center">
+    <img src="img/bachata-bai.jpg" class="w-24 h-24 rounded-full mb-3 border-4 border-purple-400">
+    <h3 class="font-bold italic text-purple-700">Bachata</h3>
+    <p class="text-sm mt-2">La bachata es un baile romántico de ritmo suave que se baila principalmente en pareja. Sus movimientos controlados favorecen el equilibrio corporal, la conexión entre los bailarines y la expresión de sentimientos a través del baile.</p>
+  </div>
+
+  <div class="bg-pink-100 p-6 rounded-lg flex flex-col items-center">
+    <img src="img/reggueton-regue.jpg" class="w-24 h-24 rounded-full mb-3 border-4 border-purple-400">
+    <h3 class="font-bold italic text-purple-700">Reggaetón</h3>
+    <p class="text-sm mt-2">El reggaetón es un baile urbano moderno que se distingue por movimientos fuertes y marcados del cuerpo. Su ritmo intenso ayuda a mejorar la resistencia física y permite expresar energía, actitud y estilo personal al bailar.</p>
+  </div>
+
+</div>
+
+<!-- CONTENIDO CENTRAL -->
+<div class="mb-8">
+
+  <img src="img/fondo-fiesta.jpg" class="w-3/4 mx-auto h-auto object-contain mb-4 rounded border-4 border-pink-300">
+
+  <h2 class="font-bold italic mb-2 text-purple-700 text-xl text-center">¿Por qué aprender a bailar?</h2>
+  <p class="text-sm text-center max-w-3xl mx-auto">
+   Aprender a bailar es una forma divertida de mantener el cuerpo activo y saludable. El baile mejora la coordinación, fortalece los músculos y aumenta la resistencia física. Además, ayuda a reducir el estrés y a sentirse mejor emocionalmente. También permite expresar sentimientos y emociones a través del movimiento, lo que favorece la confianza personal. Por último, el baile promueve la convivencia social, ya que facilita conocer personas y compartir momentos agradables en un ambiente positivo.
+  </p>
+
+</div>
+
+<!-- NUEVA SECCIÓN -->
+<div class="mb-8 bg-pink-100 p-4 rounded-lg">
+  <h2 class="font-bold italic mb-4 text-purple-700 text-xl text-center">Beneficios del baile</h2>
+
+  <div class="grid grid-cols-3 gap-6 text-center">
+    <div class="bg-white p-4 rounded-lg border-2 border-pink-300">
+      <p class="font-bold text-purple-700">Salud</p>
+      <p class="text-sm">
+       El baile es una actividad física que fortalece los músculos, mejora la resistencia y favorece el buen funcionamiento del corazón. Además, ayuda a mantener una postura correcta, mejora la coordinación y contribuye a llevar un estilo de vida activo y saludable.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg border-2 border-pink-300">
+      <p class="font-bold text-purple-700">Emociones</p>
+      <p class="text-sm">
+        El baile permite liberar tensiones y disminuir el estrés diario. A través del movimiento corporal se pueden expresar sentimientos, mejorar el estado de ánimo y aumentar la confianza personal, favoreciendo el equilibrio emocional y el bienestar mental.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg border-2 border-pink-300">
+      <p class="font-bold text-purple-700">Social</p>
+      <p class="text-sm">
+        El baile promueve la convivencia y el trabajo en equipo con otras personas. Facilita la comunicación, ayuda a crear nuevas amistades y permite compartir experiencias en un ambiente sano que fortalece las relaciones sociales.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function cambiarMenu(btn){
+  btn.classList.toggle("bg-purple-500");
+  btn.classList.toggle("bg-pink-400");
+}
+</script>
+
+</body>
+</html>
